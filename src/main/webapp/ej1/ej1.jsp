@@ -18,5 +18,9 @@
             "de tal forma que la apariencia de la página web que muestra el navegador luzca más bonita mediante<br/>" +
             "la utilización de CSS (utiliza siempre ficheros independientes para CSS para no mezclarlo con HTML)" %></h3>
     <a href="../index.jsp">Lista Ejercicios</a>
+
+    <!--Comienzo Ejercicio 1-->
+
+    <p id="personalData"><%= "Daniel Clavijo Núñez - dclanun0611@g.educaand.es" %></p>
 </body>
 </html>

@@ -16,5 +16,18 @@
     <br/>
     <h3><%= "Realiza una aplicación que calcule la media de tres notas introducidas desde un formulario." %></h3>
     <a href="../index.jsp">Lista Ejercicios</a>
+
+    <!--Comienzo Ejercicio 3-->
+
+    <form method="post" action="ej3Media.jsp">
+        <% out.println("<br/>Introduce una nota: <br/>"); %>
+        <input type="text" name="nota1">
+        <% out.println("Introduce otra nota: <br/>"); %>
+        <input type="text" name="nota2">
+        <% out.println("Introduce otra nota: <br/>"); %>
+        <input type="text" name="nota3">
+        <input type="submit" value="Calcular Media">
+    </form>
+
 </body>
 </html>

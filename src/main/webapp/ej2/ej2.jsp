@@ -18,5 +18,15 @@
             "Español, Portugués e Inglés. A continuación, mostrará “Hola” (en el idioma seleccionado) seguido del nombre introducido.<br/>" +
             "El nombre y el idioma se deben recoger mediante un formulario." %></h3>
     <a href="../index.jsp">Lista Ejercicios</a>
+
+    <!--Comienzo Ejercicio 2-->
+    <form method="post" action="ej2Traducir.jsp">
+        <% out.println("<br/>Introduce tu nombre: "); %>
+        <input type="text" name="nombre">
+        <% out.println("<br/>Escoge un idioma (Español, Portugués e Inglés): "); %>
+        <input type="text" name="idioma" >
+        <% out.println("<br/>"); %>
+        <input type="submit" value="Traducir">
+    </form>
 </body>
 </html>
