@@ -16,5 +16,17 @@
     <br/>
     <h3><%= "Realiza una aplicación que solucione la ecuación de 2º grado, utiliza operaciones BigDecimal." %></h3>
     <a href="../index.jsp">Lista Ejercicios</a>
+
+    <!--Comienzo Ejercicio 5-->
+    <form method="post" action="ej5Ecuación.jsp">
+        <% out.println("<br/>Introduce el parámetro a: "); %>
+        <input type="text" name="a">
+        <% out.println("<br/>Introduce el parámetro b: "); %>
+        <input type="text" name="b">
+        <% out.println("<br/>Introduce el parámetro c: "); %>
+        <input type="text" name="c">
+        <% out.println("<br/>"); %>
+        <input type="submit" value="Calcular Ecuación">
+    </form>
 </body>
 </html>
