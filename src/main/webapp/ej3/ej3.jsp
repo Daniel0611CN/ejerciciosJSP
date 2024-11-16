@@ -21,11 +21,11 @@
 
     <form method="post" action="ej3Media.jsp">
         <% out.println("<br/>Introduce una nota: "); %>
-        <input type="text" name="nota1">
+        <input type="number" name="nota1">
         <% out.println("<br/>Introduce otra nota: "); %>
-        <input type="text" name="nota2">
+        <input type="number" name="nota2">
         <% out.println("<br/>Introduce otra nota: "); %>
-        <input type="text" name="nota3">
+        <input type="number" name="nota3">
         <% out.println("<br/><br/>"); %>
         <input type="submit" value="Calcular Media">
     </form>

@@ -20,11 +20,11 @@
     <!--Comienzo Ejercicio 5-->
     <form method="post" action="ej5Ecuación.jsp">
         <% out.println("<br/>Introduce el parámetro a: "); %>
-        <input type="text" name="a">
+        <input type="number" name="a">
         <% out.println("<br/>Introduce el parámetro b: "); %>
-        <input type="text" name="b">
+        <input type="number" name="b">
         <% out.println("<br/>Introduce el parámetro c: "); %>
-        <input type="text" name="c">
+        <input type="number" name="c">
         <% out.println("<br/>"); %>
         <input type="submit" value="Calcular Ecuación">
     </form>

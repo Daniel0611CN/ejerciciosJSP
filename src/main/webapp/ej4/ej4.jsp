@@ -22,7 +22,7 @@
 
     <form method="post" action="ej4Dolares.jsp">
         <% out.println("Introduce un precio en Euros: "); %>
-        <input type="text" name="precio">
+        <input type="number" name="precio">
         <% out.println("<br/>"); %>
         <input type="submit" value="Convertir a Dólares">
     </form>

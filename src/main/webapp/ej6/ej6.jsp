@@ -17,5 +17,13 @@
     <h3><%= "Realiza una aplicación que pida un número y que luego muestre la tabla de multiplicar de ese número.<br/>" +
             "El resultado se debe mostrar en una tabla ('table' en HTML)." %></h3>
     <a href="../index.jsp">Lista Ejercicios</a>
+
+   <!--Comienzo Ejercicio 6-->
+    <form method="post" action="ej6Tabla.jsp">
+        <% out.println("<br/>Introduzca un número: "); %>
+        <input type="number" name="numero">
+        <% out.println("<br/><br/>"); %>
+        <input type="submit" value="Calcular Tabla">
+    </form>
 </body>
 </html>

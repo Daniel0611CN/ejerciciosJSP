@@ -17,5 +17,17 @@
     <h3><%= "Escribe una aplicación que genere el calendario para un mes. Se pedirá el nombre del mes, el año.<br/>" +
             "El programa debe deducir estos datos del mes y el año. Pista: puedes usar la clase Calendar (java.util.Calendar)." %></h3>
     <a href="../index.jsp">Lista Ejercicios</a>
+
+    <!--Comienzo Ejercicio 7-->
+
+    <form method="post" action="ej7Calendar.jsp">
+        <% out.println("<br/>Introduce un mes: "); %>
+        <input type="text" name="mes">
+        <% out.println("<br/>Introduce un año: "); %>
+        <input type="text" name="año">
+        <% out.println("<br/>"); %>
+        <input type="submit" value="Mostrar Calendario">
+    </form>
+
 </body>
 </html>
