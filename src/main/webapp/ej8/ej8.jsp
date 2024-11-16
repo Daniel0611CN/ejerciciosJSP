@@ -26,7 +26,7 @@
         <label><input type="checkbox" name="tapiceria" value="blanco"> Blanco </label><br>
         <label><input type="checkbox" name="tapiceria" value="negro"> Negro </label><br>
         <label><input type="checkbox" name="tapiceria" value="berenjena"> Berenjena </label><br>
-        <% out.println("Elige un material para las molduras: <br>"); %>
+        <% out.println("<br>Elige un material para las molduras: <br>"); %>
         <label><input type="checkbox" name="moldura" value="madera"> Madera </label><br>
         <label><input type="checkbox" name="moldura" value="carbono"> Carbono </label><br>
         <% out.println("<br>"); %>

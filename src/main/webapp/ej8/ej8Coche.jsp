@@ -44,17 +44,17 @@
 
     if (aux1.equals("blanco") && aux2.equals("madera")) {
 %>
-    <img src="">
+    <img src="../images/Imagen 1.jpeg" width="400px">
 <% } else if (aux1.equals("blanco") && aux2.equals("carbono")) { %>
-    <img src="">
+    <img src="../images/Imagen 2.png" width="400px">
 <% } else if (aux1.equals("negro") && aux2.equals("madera")) { %>
-    <img src="">
+    <img src="../images/Imagen 3.png" width="400px">
 <% } else if (aux1.equals("negro") && aux2.equals("carbono")) { %>
-    <img src="">
+    <img src="../images/Imagen 4.png" width="400px">
 <% } else if (aux1.equals("berenjena") && aux2.equals("madera")) { %>
-    <img src="">
+    <img src="../images/Imagen 5.png" width="400px">
 <% } else if (aux1.equals("berenjena") && aux2.equals("carbono")) { %>
-    <img src="">
+    <img src="../images/Imagen 6.png" width="400px">
 <% } %>
 </body>
 </html>
