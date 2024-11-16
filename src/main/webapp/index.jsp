@@ -3,11 +3,12 @@
 <html>
 <head>
     <title>JSP - Ejercicios</title>
+    <link rel="stylesheet" href="<%= request.getContextPath() %>/style.css">
 </head>
 <body>
 <h1><%= "Ejercicios JSP" %></h1>
 <br/>
-<a href="hello-servlet">Hello Servlet</a>
+<a href="hello-servlet" id="servlet">Hello Servlet</a>
 <br/>
 <ul>
     <li><a href="ej1/ej1.jsp">Ejercicio 1</a></li>
@@ -20,7 +21,6 @@
     <li><a href="ej8/ej8.jsp">Ejercicio 8</a></li>
     <li><a href="ej9/ej9.jsp">Ejercicio 9</a></li>
     <li><a href="ej10/ej10.jsp">Ejercicio 10</a></li>
-
 </ul>
 </body>
 </html>

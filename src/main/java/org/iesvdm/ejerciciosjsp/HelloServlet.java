@@ -18,7 +18,17 @@ public class HelloServlet extends HttpServlet {
 
         // Hello
         PrintWriter out = response.getWriter();
-        out.println("<html><body>");
+        out.println("<html>");
+        out.println("<head>");
+        out.println("<title>Ejercicios JSP</title>");
+        out.print("<style>"
+                + "* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Montserrat', sans-serif; text-align: center; font-weight: 100; }"
+                + "h1 { padding: 30px 0; background: aquamarine; border-bottom: 2px solid black; font-size: 2.25em; margin: 0 0 380px 0; }"
+                + "a { color: black; font-size: 2.5em; text-decoration: none; transition: color 0.5s; }"
+                + "a:hover { color: cadetblue; }"
+                + "</style>");
+        out.println("</head>");
+        out.println("<body>");
         out.println("<h1>" + message + "</h1>");
         out.println("<a href='index.jsp'>Ejercicios</a>");
         out.println("</body></html>");

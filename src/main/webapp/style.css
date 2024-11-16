@@ -12,23 +12,29 @@ h1 {
     background: aquamarine;
     border-bottom: 2px solid black;
     font-size: 2.25em;
+    margin: 0 0 160px 0;
 }
 
-h3 {
-    margin: 200px 0 60px 0;
-    text-anchor: start;
-    line-height: 30px;
-    font-size: 1.35em;
+ul {
+    padding: 50px 0 20px 0;
+}
+
+li {
+    padding: 0 0 10px 0;
+}
+
+#servlet {
+    font-size: 1.75em;
 }
 
 a {
     text-decoration: none;
     font-size: large;
-}
-
-#personalData {
-    margin: 75px 0 0 0;
-    font-size: 1.275em;
-    text-decoration-line: underline;
-    text-underline-color: black;
+    padding: 15px 0 0 0;
+    color: black;
+    text-decoration: black;
+    &:hover {
+        color: cadetblue;
+        transition: 0.35s;
+    }
 }

@@ -1,4 +1,5 @@
-<%@ page import="java.math.BigDecimal" %><%--
+<%@ page import="java.math.BigDecimal" %>
+<%@ page import="java.math.RoundingMode" %><%--
   Created by IntelliJ IDEA.
   User: danic
   Date: 16/11/2024
@@ -11,16 +12,22 @@
     <title>Ejercicio 5 Ecuación</title>
 </head>
 <body>
-<%--    <% BigDecimal a = BigDecimal.valueOf(Long.parseLong(request.getParameter("a")));--%>
-<%--        BigDecimal b = BigDecimal.valueOf(Long.parseLong(request.getParameter("b")));--%>
-<%--        BigDecimal c = BigDecimal.valueOf(Long.parseLong(request.getParameter("c")));--%>
-<%--        BigDecimal pow = BigDecimal.valueOf(Math.pow(b.doubleValue(), 2));--%>
-<%--        BigDecimal multiply = BigDecimal.valueOf(4*a.doubleValue()*b.doubleValue());--%>
-<%--        BigDecimal substract = BigDecimal.valueOf(pow.doubleValue()*multiply.doubleValue());--%>
-<%--        BigDecimal sqrt = BigDecimal.valueOf(Math.sqrt(substract.doubleValue()));--%>
-<%--        BigDecimal result = BigDecimal.valueOf((-b.add(sqrt).divide(BigDecimal.valueOf(2*a.doubleValue()*b.doubleValue())).doubleValue())); %>--%>
+<% double a = Double.parseDouble(request.getParameter("a"));
+    double b = Double.parseDouble(request.getParameter("b"));
+    double c = Double.parseDouble(request.getParameter("c"));
+    if ((Math.pow(b, 2) - 4*a*c) > 0) {
+        BigDecimal result1 = BigDecimal.valueOf(-b+(Math.sqrt(Math.pow(b, 2) - (4*a*c))))
+                .divide(BigDecimal.TWO.multiply(BigDecimal.valueOf(a))).setScale(4, RoundingMode.HALF_EVEN);
+        BigDecimal result2 = BigDecimal.valueOf(-b-(Math.sqrt(Math.pow(b, 2) - (4*a*c))))
+                .divide(BigDecimal.TWO.multiply(BigDecimal.valueOf(a))).setScale(4, RoundingMode.HALF_EVEN); %>
     <% request.setCharacterEncoding("UTF-8"); %>
-    El resultado de la ecuación es:
-    <% out.println("");%>
+    El resultado 1 de la ecuación es:
+    <% out.println(result1 + "<br/>");%>
+    El resultado 2 de la ecuación es:
+    <% out.println(result2); } else { out.println("La ecuación no tiene solución"); }%>
 </body>
 </html>
+
+<!--
+
+-->
