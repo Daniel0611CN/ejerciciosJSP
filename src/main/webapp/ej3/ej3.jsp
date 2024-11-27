@@ -18,17 +18,21 @@
     <a href="../index.jsp">Lista Ejercicios</a>
 
     <!--Comienzo Ejercicio 3-->
-
     <form method="post" action="ej3Media.jsp">
-        <% out.println("<br/>Introduce una nota: "); %>
-        <input type="number" name="nota1">
-        <% out.println("<br/>Introduce otra nota: "); %>
-        <input type="number" name="nota2">
-        <% out.println("<br/>Introduce otra nota: "); %>
-        <input type="number" name="nota3">
-        <% out.println("<br/><br/>"); %>
-        <input type="submit" value="Calcular Media">
+        <% out.println("<br><br>"); %>
+        <label>
+            <input type="number" name="nota1" placeholder="Introduce una nota">
+        </label>
+        <% out.println("<br><br>"); %>
+        <label>
+            <input type="number" name="nota2" placeholder="Introduce una nota">
+        </label>
+        <% out.println("<br><br>"); %>
+        <label>
+            <input type="number" name="nota3" placeholder="Introduce una nota">
+        </label>
+        <% out.println("<br><br>"); %>
+        <input type="submit" value="Calcular Media" id="btn">
     </form>
-
 </body>
 </html>

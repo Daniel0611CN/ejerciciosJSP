@@ -9,26 +9,38 @@
 <html>
 <head>
     <title>Ejercicio 2 Traducir</title>
+    <link rel="stylesheet" href="<%= request.getContextPath() %>/ej2/ej2Traducir.css">
 </head>
 <body>
+    <%
+        String nombre = request.getParameter("nombre");
+        String idioma = request.getParameter("idioma");
+        String nombreES = "Hola " + nombre;
+        String nombrePO = "Óla " + nombre;
+        String nombreIN = "Hello " + nombre;
 
-    <% if (request.getParameter("idioma").equalsIgnoreCase("Español")) { %>
-
-    <% request.setCharacterEncoding("UTF-8"); %>
-    Hola
-    <% out.print(request.getParameter("nombre")); } %>
-
-    <% if (request.getParameter("idioma").equalsIgnoreCase("Portugués")) { %>
-
-    <% request.setCharacterEncoding("UTF-8"); %>
-    Olá
-    <% out.print(request.getParameter("nombre")); } %>
-
-    <% if (request.getParameter("idioma").equalsIgnoreCase("Inglés")) { %>
-
-    <% request.setCharacterEncoding("UTF-8"); %>
-    Hello
-    <% out.print(request.getParameter("nombre")); } %>
-
+        if (!idioma.isEmpty() && !nombre.isEmpty()) {
+            if (idioma.equalsIgnoreCase("es")) {
+    %>
+        <div>
+            <h3><%= nombreES %></h3>
+        </div>
+    <% } else if (idioma.equalsIgnoreCase("po")) { %>
+        <div>
+            <h3><%= nombrePO %></h3>
+        </div>
+    <% } else if (idioma.equalsIgnoreCase("in")) { %>
+        <div>
+            <h3><%= nombreIN %></h3>
+        </div>
+    <% } else { %>
+        <div>
+            <h3><%= "Has introducido un idioma no válido" %></h3>
+        </div>
+    <% }} else { %>
+        <div>
+            <h3><%= "Debes rellenar todos los parámetros" %></h3>
+        </div>
+    <% } %>
 </body>
 </html>

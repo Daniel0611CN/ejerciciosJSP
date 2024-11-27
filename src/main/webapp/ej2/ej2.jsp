@@ -21,11 +21,11 @@
 
     <!--Comienzo Ejercicio 2-->
     <form method="post" action="ej2Traducir.jsp">
-        <% out.println("<br/>Introduce tu nombre: "); %>
-        <input type="text" name="nombre">
-        <% out.println("<br/>Escoge un idioma (Español, Portugués e Inglés): "); %>
-        <input type="text" name="idioma" >
-        <% out.println("<br/>"); %>
+        <% out.println("<br><br>"); %>
+        <input type="text" name="nombre" placeholder="Introduce tu nombre">
+        <% out.println("<br><br>"); %>
+        <input type="text" name="idioma" placeholder="Escoge un idioma (ES, PO, IN)">
+        <% out.println("<br><br>"); %>
         <input type="submit" value="Traducir">
     </form>
 </body>
