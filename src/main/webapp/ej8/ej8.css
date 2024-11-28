@@ -5,11 +5,16 @@
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     font-weight: 100;
+    color: white;
+}
+
+body {
+    background: #191919;
 }
 
 h1 {
     padding: 30px 0 30px 0;
-    background: aquamarine;
+    background: darkslategrey;
     border-bottom: 2px solid black;
     font-size: 2.25em;
 }
@@ -24,4 +29,15 @@ h3 {
 a {
     text-decoration: none;
     font-size: large;
+}
+
+input {
+    border: 1px solid white;
+    border-radius: 5px;
+    height: 20px;
+    color: black;
+}
+
+#btn {
+    width: 150px;
 }

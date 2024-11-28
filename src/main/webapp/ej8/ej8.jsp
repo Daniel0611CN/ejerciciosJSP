@@ -30,7 +30,7 @@
         <label><input type="checkbox" name="moldura" value="madera"> Madera </label><br>
         <label><input type="checkbox" name="moldura" value="carbono"> Carbono </label><br>
         <% out.println("<br>"); %>
-        <input type="submit" value="Mostrar Interior">
+        <input type="submit" value="Mostrar Interior" id="btn">
     </form>
 
 </body>

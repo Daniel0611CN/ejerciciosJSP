@@ -9,29 +9,32 @@
 <html>
 <head>
     <title>Ejercicio 6 Tabla</title>
+    <link rel="stylesheet" href="<%= request.getContextPath() %>/ej6/ej6Tabla.css">
 </head>
 <body>
-<table border="1">
-    <caption>Lista de Estudiantes</caption>
-    <thead>
-    <tr>
-        <th>Número</th>
-        <th>Multiplicador</th>
-        <th>Resultado</th>
-    </tr>
-    </thead>
-    <tbody>
-    <%
-        for (int i = 0; i < 10; i++) {
-
-    %>
-    <tr>
-        <td><%= request.getParameter("numero") %></td>
-        <td><%= i+1 %></td>
-        <td><%= Double.parseDouble(request.getParameter("numero"))*(i+1) %></td>
-    </tr>
-    <% } %>
-    </tbody>
-</table>
+<div>
+    <h3>Tabla de Multiplicar</h3>
+    <br><br>
+    <table border="1">
+        <thead>
+        <tr>
+            <th>Número</th>
+            <th>Por</th>
+            <th>Resultado</th>
+        </tr>
+        </thead>
+        <tbody>
+        <%
+            for (int i = 0; i < 10; i++) {
+        %>
+        <tr>
+            <td><%= request.getParameter("numero") %></td>
+            <td><%= i+1 %></td>
+            <td><%= Double.parseDouble(request.getParameter("numero"))*(i+1) %></td>
+        </tr>
+        <% } %>
+        </tbody>
+    </table>
+</div>
 </body>
 </html>

@@ -21,12 +21,12 @@
     <!--Comienzo Ejercicio 7-->
 
     <form method="post" action="ej7Calendar.jsp">
-        <% out.println("<br/>Introduce un mes: "); %>
-        <input type="text" name="mes">
-        <% out.println("<br/>Introduce un año: "); %>
-        <input type="text" name="año">
-        <% out.println("<br/>"); %>
-        <input type="submit" value="Mostrar Calendario">
+        <% out.println("<br><br>"); %>
+        <input type="text" name="mes" placeholder="Introduce un mes">
+        <% out.println("<br><br>"); %>
+        <input type="text" name="año" placeholder="Introduce un año">
+        <% out.println("<br><br>"); %>
+        <input type="submit" value="Mostrar Calendario" id="btn">
     </form>
 
 </body>

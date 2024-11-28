@@ -9,12 +9,14 @@
 <html>
 <head>
     <title>Ejercicio 7 Calendario</title>
+    <link rel="stylesheet" href="<%= request.getContextPath() %>/ej7/ej7Caledar.css">
 </head>
 <body>
 <%
     int year = Integer.parseInt(request.getParameter("año"));
     int month = Integer.parseInt(request.getParameter("mes")) - 1;
 
+    if (month <= 11) {
     Calendar calendar = Calendar.getInstance();
     calendar.setFirstDayOfWeek(Calendar.MONDAY);
     calendar.set(year, month, 1);
@@ -25,8 +27,8 @@
     int daysInMonth = calendar.getActualMaximum(Calendar.DAY_OF_MONTH);
     String[] days = {"L", "M", "X", "J", "V", "S", "D"};
 %>
-
-<h2>Calendario de <%= month + 1 %>/<%= year %></h2>
+<div>
+<h3>Calendario de <%= month + 1 %>/<%= year %></h3>
 <table border="1">
     <tr>
         <% for (String day : days) { %>
@@ -51,5 +53,11 @@
         %>
     </tr>
 </table>
+</div>
+<% } else { %>
+<div>
+    <h3><%= "El mes introducido no es válido" %></h3>
+</div>
+<% } %>
 </body>
 </html>
