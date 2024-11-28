@@ -26,7 +26,7 @@
         <% out.println("<br><br>"); %>
         <input type="text" name="idioma" placeholder="Escoge un idioma (ES, PO, IN)">
         <% out.println("<br><br>"); %>
-        <input type="submit" value="Traducir">
+        <input type="submit" value="Traducir" id="btn">
     </form>
 </body>
 </html>

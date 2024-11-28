@@ -19,14 +19,14 @@
 
     <!--Comienzo Ejercicio 5-->
     <form method="post" action="ej5Ecuación.jsp">
-        <% out.println("<br/>Introduce el parámetro a: "); %>
-        <input type="number" name="a">
-        <% out.println("<br/>Introduce el parámetro b: "); %>
-        <input type="number" name="b">
-        <% out.println("<br/>Introduce el parámetro c: "); %>
-        <input type="number" name="c">
-        <% out.println("<br/>"); %>
-        <input type="submit" value="Calcular Ecuación">
+        <% out.println("<br><br>"); %>
+        <input type="number" name="a" placeholder="Introduce el parámetro a">
+        <% out.println("<br><br>"); %>
+        <input type="number" name="b" placeholder="Introduce el parámetro b">
+        <% out.println("<br><br>"); %>
+        <input type="number" name="c" placeholder="Introduce el parámetro c">
+        <% out.println("<br><br>"); %>
+        <input type="submit" value="Calcular Ecuación" id="btn">
     </form>
 </body>
 </html>

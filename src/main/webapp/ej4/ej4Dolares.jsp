@@ -9,11 +9,22 @@
 <html>
 <head>
     <title>Ejercicio 4 Dólares</title>
+    <link rel="stylesheet" href="<%= request.getContextPath() %>/ej4/ej4Dolares.css">
 </head>
 <body>
-    <% double convDolar = Double.parseDouble(request.getParameter("precio"))*1.05; %>
-    <% request.setCharacterEncoding("UTF-8"); %>
-    El precio en Dólares es:
-    <% out.print(convDolar + " $");%>
+    <%
+        String parameterEuros = request.getParameter("precio");
+        if (!parameterEuros.isEmpty()) {
+            double dolares = Double.parseDouble(parameterEuros) * 1.05;
+    %>
+    <div>
+        <h3><%= "Los " + parameterEuros + " € son " + dolares + " $."%></h3>
+    </div>
+    <% } else { %>
+    <div>
+        <h3><%= "No has introducido ningún valor"%></h3>
+    </div>
+    <% } %>
+
 </body>
 </html>

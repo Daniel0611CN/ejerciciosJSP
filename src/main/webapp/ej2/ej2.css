@@ -40,5 +40,6 @@ input {
 }
 
 #btn {
+    width: 150px;
     height: 20px;
 }

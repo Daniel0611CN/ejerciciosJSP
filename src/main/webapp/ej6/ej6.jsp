@@ -20,10 +20,10 @@
 
    <!--Comienzo Ejercicio 6-->
     <form method="post" action="ej6Tabla.jsp">
-        <% out.println("<br/>Introduzca un número: "); %>
-        <input type="number" name="numero">
-        <% out.println("<br/><br/>"); %>
-        <input type="submit" value="Calcular Tabla">
+        <% out.println("<br><br>"); %>
+        <input type="number" name="numero" placeholder="Introduzca un número">
+        <% out.println("<br><br>"); %>
+        <input type="submit" value="Calcular Tabla" id="btn">
     </form>
 </body>
 </html>

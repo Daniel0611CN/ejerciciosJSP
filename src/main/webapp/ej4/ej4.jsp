@@ -17,14 +17,12 @@
     <h3><%= "Realiza un conversor de dólares a euros." %></h3>
     <a href="../index.jsp">Lista Ejercicios</a>
 
-
     <!--Comienzo Ejercicio 4-->
-
     <form method="post" action="ej4Dolares.jsp">
-        <% out.println("Introduce un precio en Euros: "); %>
-        <input type="number" name="precio">
-        <% out.println("<br/>"); %>
-        <input type="submit" value="Convertir a Dólares">
+        <% out.println("<br><br>"); %>
+        <input type="number" name="precio" placeholder="Introduce un precio en Euros">
+        <% out.println("<br><br>"); %>
+        <input type="submit" value="Convertir a Dólares" id="btn">
     </form>
 
 </body>
